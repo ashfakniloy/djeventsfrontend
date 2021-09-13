@@ -15,6 +15,7 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    login({ email, password });
   };
 
   useEffect(() => error && toast.error(error));
@@ -28,7 +29,7 @@ export default function LoginPage() {
         <ToastContainer />
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="emai l">Email address</label>
+            <label htmlFor="email">Email address</label>
             <input
               type="email"
               id="email"
