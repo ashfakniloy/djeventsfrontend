@@ -42,6 +42,7 @@ export default function LoginPage() {
             <input
               type="password"
               id="password"
+              autoComplete="on"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

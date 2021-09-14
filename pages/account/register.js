@@ -58,6 +58,7 @@ export default function RegisterPage() {
             <input
               type="password"
               id="password"
+              autoComplete="on"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -67,6 +68,7 @@ export default function RegisterPage() {
             <input
               type="password"
               id="passwordConfirm"
+              autoComplete="on"
               value={passwordConfirm}
               onChange={(e) => setPasswordConfirm(e.target.value)}
             />
