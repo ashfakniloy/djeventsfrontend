@@ -7,7 +7,7 @@ export default function Home({ events }) {
   return (
     <div>
       <Layout>
-        <h1>Upcoming events</h1>
+        <h1>Upcoming events:</h1>
         {events.length === 0 && <h3>No events to show</h3>}
 
         {events.map((evt) => (
